@@ -1,6 +1,6 @@
 import { Route, Switch } from "react-router";
 import { ThemeProvider } from "styled-components";
-import { lightTheme, darkTheme } from "./components/themes";
+import { LightTheme, DarkTheme } from "./components/Themes";
 import GlobalStyle from "./globalStyles"
 
 // Components
@@ -13,7 +13,7 @@ import MySkillsPage from './components/MySkillsPage'
 function App() {
   return <>
     <GlobalStyle />
-      <ThemeProvider theme={lightTheme}>
+      <ThemeProvider theme={LightTheme}>
       <Switch>
         <Route exact path="/" component={Main} />
         <Route exact path="/about" component={AboutPage} />
