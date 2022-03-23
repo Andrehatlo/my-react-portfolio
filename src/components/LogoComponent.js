@@ -9,7 +9,7 @@ font-family: 'Pacifico',cursive;
 
 position: fixed;
 left: 2rem;
-top: 2erm;
+top: 2rem;
 z-index: 3;
 `
 
