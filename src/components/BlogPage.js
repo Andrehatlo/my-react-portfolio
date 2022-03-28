@@ -10,9 +10,10 @@ import BlogComponent from './BlogComponent'
 import AnchorComponent from '../subComponents/Anchor'
 
 import { useState, useEffect } from 'react'
+import BigTitle from '../subComponents/BigTitle'
+import { motion } from 'framer-motion'
 
-
-const MainContainer = styled.div`
+const MainContainer = styled(motion.div)`
   background-image: url(${img});
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,6 +42,20 @@ const Grid = styled.div`
   grid-gap: calc(1rem + 2vw);
 `
 
+// Framer-motion config
+
+const container = {
+  hidden: {opacity: 0},
+  show: {
+    opacity: 1,
+
+    transition: {
+      staggerChildren: 0.5,
+      duration: 0.5,
+    }
+  }
+}
+
 function BlogPage() {
 
   const [numbers, setNumbers] = useState(0);
@@ -52,26 +67,33 @@ function BlogPage() {
   
 
   return (
-    <MainContainer>
+    <MainContainer
+      variants={container}
+      initial='hidden'
+      animate='show'
+      exit={{
+        opacity:0, transition:{duration: 0.5}
+      }}
+    >
       <Container>
         <LogoComponent />
         <PowerButton />
         <SocialIcons />
         <AnchorComponent numbers={numbers}/>
-<Center>
-<Grid>
-{
-  Blogs.map(blog => {
-    return <BlogComponent key={blog.id} blog={blog} />
-  })
-}
-</Grid>
-</Center>
+          <Center>
+            <Grid>
+              {
+                Blogs.map(blog => {
+                  return <BlogComponent key={blog.id} blog={blog} />
+                })
+              }
+            </Grid>
+        </Center>
+        <BigTitle text="BLOG" top="5rem" left="5rem" />
       </Container>
     </MainContainer>
   )
-
-    }
+}
 
 
 export default BlogPage

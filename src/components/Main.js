@@ -5,10 +5,8 @@ import styled, { keyframes } from 'styled-components'
 import LogoComponent from './LogoComponent'
 import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
-import { YinYang } from './AllSvgs'
+import { YinYang, Hex } from './AllSvgs'
 import Intro from './intro'
-
-
 
 const MainContainer = styled.div`
   background: ${props => props.theme.body};
@@ -145,20 +143,38 @@ const Main = () => {
 
       <Center click={click}>
         <YinYang onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' />
-        <span>click here</span>
+        {/* <Hex onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' /> */}
+        <span>Click Me</span>
       </Center>
 
       <Contact target="_blank" to={{pathname:"mailto:andrehatlo@icloud.com"}}>
         <motion.h2
+          initial={{
+            y:-200,
+            transition: { type: 'spring', duration: 1.5, delay: 1}
+          }}
+          animate={{
+            y:0,
+            transition: { type: 'spring', duration: 1.5, delay: 1}
+          }}
         
           whileHover={{scale: 1.1}}
           whileTap={{scale: 0.9}}
         >
-          Say Hi..
+          Talk to me!
         </motion.h2>
       </Contact>
       <BLOG to="/blog">
         <motion.h2
+
+          initial={{
+            y:-200,
+            transition: { type: 'spring', duration: 1.5, delay: 1}
+          }}
+          animate={{
+            y:0,
+            transition: { type: 'spring', duration: 1.5, delay: 1}
+          }}
         
         whileHover={{scale: 1.1}}
         whileTap={{scale: 0.9}}>
@@ -167,6 +183,15 @@ const Main = () => {
       </BLOG>
       <WORK to="/work" click={click}>
         <motion.h2
+
+          initial={{
+            y:-200,
+            transition: { type: 'spring', duration: 1.5, delay: 1}
+          }}
+          animate={{
+            y:0,
+            transition: { type: 'spring', duration: 1.5, delay: 1}
+          }}
         
         whileHover={{scale: 1.1}}
         whileTap={{scale: 0.9}}>
@@ -176,6 +201,15 @@ const Main = () => {
       <BottomBar>
         <ABOUT to="/about" click={click}>
           <motion.h2
+
+          initial={{
+            y:200,
+            transition: { type: 'spring', duration: 1.5, delay: 1}
+          }}
+          animate={{
+            y:0,
+            transition: { type: 'spring', duration: 1.5, delay: 1}
+          }}
         
         whileHover={{scale: 1.1}}
         whileTap={{scale: 0.9}}>
@@ -184,7 +218,17 @@ const Main = () => {
         </ABOUT>
         <SKILLS to="/skills">
           <motion.h2
-        
+
+            initial={{
+              y:200,
+              transition: { type: 'spring', duration: 1.5, delay: 1}
+            }}
+            animate={{
+              y:0,
+              transition: { type: 'spring', duration: 1.5, delay: 1}
+            }}
+
+
         whileHover={{scale: 1.1}}
         whileTap={{scale: 0.9}}>
             Skills

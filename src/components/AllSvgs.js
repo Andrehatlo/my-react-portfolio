@@ -1,4 +1,4 @@
-export const PowerBtn = (props) => {
+export const PowerButton = (props) => {
     return (
       <svg
         aria-hidden="true"
@@ -93,24 +93,7 @@ export const PowerBtn = (props) => {
         )
   }
   
-  export const YinYang = (props) => {
-      return (
-          <svg
-            aria-hidden="true"
-            data-prefix="fas"
-            data-icon="yin-yang"
-            className="prefix__svg-inline--fa prefix__fa-yin-yang prefix__fa-w-16"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 496 512"
-            {...props}
-          >
-            <path
-              fill={props.fill}
-              d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm0 376c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm0-128c-53.02 0-96 42.98-96 96s42.98 96 96 96c-106.04 0-192-85.96-192-192S141.96 64 248 64c53.02 0 96 42.98 96 96s-42.98 96-96 96zm0-128c-17.67 0-32 14.33-32 32s14.33 32 32 32 32-14.33 32-32-14.33-32-32-32z"
-            />
-          </svg>
-        )
-  }
+
   
   export const Anchor = (props) => {
     return (
@@ -195,3 +178,120 @@ export const PowerBtn = (props) => {
     )
   
   }
+
+  export const YinYang = (props) => {
+    return (
+        <svg
+          aria-hidden="true"
+          data-prefix="fas"
+          data-icon="yin-yang"
+          className="prefix__svg-inline--fa prefix__fa-yin-yang prefix__fa-w-16"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 496 512"
+          {...props}
+        >
+          <defs>
+            <linearGradient
+              id="a"
+              x1={84.63}
+              y1={295.19}
+              x2={253.89}
+              y2={2.04}
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset={0} stopColor="#ffdc00" />
+              <stop offset={0.33} stopColor="#e58e2f" />
+              <stop offset={0.67} stopColor="#db2d72" />
+              <stop offset={1} stopColor="#f0f" />
+            </linearGradient>
+          </defs>
+          <path
+            fill={props.fill}
+            d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm0 376c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm0-128c-53.02 0-96 42.98-96 96s42.98 96 96 96c-106.04 0-192-85.96-192-192S141.96 64 248 64c53.02 0 96 42.98 96 96s-42.98 96-96 96zm0-128c-17.67 0-32 14.33-32 32s14.33 32 32 32 32-14.33 32-32-14.33-32-32-32z"
+          />
+        </svg>
+      )
+}
+
+export const Hex = (props) => {
+  return(
+    <svg
+    aria-hidden="true"
+    data-prefix="fas"
+    data-icoin="hex"
+    className="prefix__svg-inline--fa prefix__fa-hex prefix__fa-w-16"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 338.51 297.23"
+    {...props}
+  >
+    <defs>
+      <linearGradient
+        id="a"
+        x1={84.63}
+        y1={295.19}
+        x2={253.89}
+        y2={2.04}
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop offset={0} stopColor="#ffdc00" />
+        <stop offset={0.33} stopColor="#e58e2f" />
+        <stop offset={0.67} stopColor="#db2d72" />
+        <stop offset={1} stopColor="#f0f" />
+      </linearGradient>
+    </defs>
+    <title>{"Asset 1"}</title>
+    <path
+      d="m79.56 290.47-22.92-39.7a5.28 5.28 0 0 1 0-4.65l25.45-44.07a5.24 5.24 0 0 1 4.06-2.35h50.89a5.26 5.26 0 0 1 4.07 2.35l25.45 44.07a5.32 5.32 0 0 1 0 4.7l-25.45 44.07a5.33 5.33 0 0 1-4 2.34H91.36a15.43 15.43 0 0 1-11.8-6.76Zm165.27-90.69L194.13 112a7.21 7.21 0 0 0-5.56-3.21H87.17a7.21 7.21 0 0 0-5.56 3.21l-50.7 87.82a7.18 7.18 0 0 0 0 6.42L45.77 232l26-45a8.22 8.22 0 0 1 6.43-3.72H145a8.22 8.22 0 0 1 6.43 3.72l33.41 57.86a8.24 8.24 0 0 1 0 7.43l-26 45h29.7a7.19 7.19 0 0 0 5.56-3.22l50.7-87.81a7.18 7.18 0 0 0 .03-6.48Zm92-58.09L259.06 6.93a15.37 15.37 0 0 0-12-6.93H91.45a15.37 15.37 0 0 0-12 6.93L1.65 141.69a15.36 15.36 0 0 0 0 13.85l17.83 30.88 51.7-89.56a10.14 10.14 0 0 1 7.94-4.58h117.41a10.14 10.14 0 0 1 7.94 4.58l58.71 101.69a10.13 10.13 0 0 1 0 9.16l-51.69 89.52h35.57a15.37 15.37 0 0 0 12-6.93l77.8-134.76a15.36 15.36 0 0 0 0-13.85Z"
+      style={{
+        fill: "url(#a)",
+      }}
+      data-name="Layer 2"
+    />
+  </svg>
+  )
+}
+
+export const PowerBtn = (props) => {
+  return(
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 512.001 512.001"
+    style={{
+      enableBackground: "new 0 0 512.001 512.001",
+    }}
+    xmlSpace="preserve"
+
+    {...props}
+  >
+    <path
+      style={{
+        fill: "#f0f",
+      }}
+      d="M373.643 506.2c-2.891 0-5.814-.813-8.415-2.517L6.949 268.862C2.611 266.02 0 261.186 0 256s2.611-10.02 6.949-12.862L365.23 8.32c7.106-4.658 16.635-2.67 21.29 4.432 4.655 7.103 2.671 16.635-4.432 21.29L43.431 256l338.658 221.959c7.103 4.655 9.087 14.187 4.432 21.29-2.952 4.504-7.866 6.951-12.878 6.951z"
+    />
+    <path
+      style={{
+        fill: "#f0f",
+      }}
+      d="M496.622 506.198c-2.945 0-5.879-.844-8.43-2.516L129.91 268.862a15.38 15.38 0 0 1 0-25.724L488.192 8.32c7.106-4.658 16.637-2.67 21.29 4.432 4.656 7.103 2.671 16.635-4.432 21.29L166.393 256l314.85 206.355V135.082c0-8.493 6.886-15.378 15.378-15.378s15.378 6.885 15.378 15.378v355.739a15.378 15.378 0 0 1-15.377 15.377z"
+    />
+    <path
+      style={{
+        fill: "#ffdc00",
+      }}
+      d="M432.33 376.922 262.758 256 432.33 135.08z"
+    />
+    <path
+      style={{
+        fill: "#e58e2f",
+      }}
+      d="M432.332 392.3a15.37 15.37 0 0 1-8.93-2.857l-169.57-120.922a15.377 15.377 0 0 1 0-25.04l169.57-120.92a15.38 15.38 0 0 1 24.306 12.521v241.843a15.379 15.379 0 0 1-8.336 13.671 15.386 15.386 0 0 1-7.04 1.704zM289.245 256l127.708 91.069V164.933L289.245 256z"
+    />
+  </svg>
+  )
+}
+  
+
+
+
+

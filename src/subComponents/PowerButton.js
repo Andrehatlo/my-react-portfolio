@@ -11,10 +11,11 @@ const Power = styled.button`
     left: 50%;
     transform: translate(-50%, 0);
 
-    background-color: #FCF6F4;
+    background-color: inherit;
+    border-radius: 100%;
+    border: none; 
+
     padding: 0.3rem;
-    border-radius: 50%;
-    border: 1px solid #000;
     width: 2.5rem;
     height: 2.5rem;
 
@@ -27,7 +28,7 @@ const Power = styled.button`
 
     &:hover{
         background-color: rgba(0,255,0,0.4);
-        box-shadow: 0 0 8px 6px rgba(0,255,0,0.2);
+        box-shadow: 0 0 8px 6px rgba(245, 40, 145, 0.8);
     }
     &::first-child{
         text-decoration: none;

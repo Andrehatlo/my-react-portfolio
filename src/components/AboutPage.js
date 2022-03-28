@@ -10,6 +10,7 @@ import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/particleComponent';
 
 import astronaut from '../assets/images/spaceman.png';
+import BigTitle from '../subComponents/BigTitle';
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
@@ -88,7 +89,7 @@ function AboutPage() {
         Lets talk about your next project. You can connect to me on my social links.
 
       </Main>
-      
+      <BigTitle text="ABOUT" top="5rem" right="5rem"/>      
     </Box>
   </ThemeProvider>
 

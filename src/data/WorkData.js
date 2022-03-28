@@ -1,12 +1,12 @@
 export const Work = [
     {
         id:1,
-        name:"Landing Page",
+        name:"CryptoDash",
         description:"",
-        tags:["react","gsap","styledComponents"],
+        tags:["React","heroku","styledComponents"],
         
         demo:"",
-        github:"https://github.com/andrehatlo/"
+        github:"https://github.com/andrehatlo/cryptodash"
     },
     {
         id:2,
