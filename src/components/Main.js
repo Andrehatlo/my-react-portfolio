@@ -5,7 +5,7 @@ import styled, { keyframes } from 'styled-components'
 import LogoComponent from './LogoComponent'
 import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
-import { YinYang, Hex } from './AllSvgs'
+import { YinYang } from './AllSvgs'
 import Intro from './intro'
 
 const MainContainer = styled.div`
@@ -144,7 +144,7 @@ const Main = () => {
       <Center click={click}>
         <YinYang onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' />
         {/* <Hex onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' /> */}
-        <span>Click Me</span>
+        <h3><span>Click Me</span></h3>
       </Center>
 
       <Contact target="_blank" to={{pathname:"mailto:andrehatlo@icloud.com"}}>
