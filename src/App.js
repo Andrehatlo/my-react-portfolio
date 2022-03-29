@@ -1,6 +1,6 @@
 import { Route, Switch, useLocation } from "react-router";
 import { ThemeProvider } from "styled-components";
-import { LightTheme, DarkTheme } from "./components/Themes";
+import { LightTheme, DarkTheme } from "./components/Themes.js";
 import GlobalStyle from "./globalStyles"
 import { AnimatePresence } from 'framer-motion'
 

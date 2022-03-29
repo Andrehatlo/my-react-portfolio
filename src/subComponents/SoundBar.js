@@ -1,4 +1,4 @@
-import { click } from '@testing-library/user-event/dist/click'
+// import { click } from '@testing-library/user-event/dist/click'
 import React, { useState, useRef } from 'react'
 import styled, { keyframes } from 'styled-components'
 

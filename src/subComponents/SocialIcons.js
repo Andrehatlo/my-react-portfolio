@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 import { Facebook, Github, Twitter, YouTube } from '../components/AllSvgs'
-import {DarkTheme, LightTheme} from '../components/Themes' 
+import {DarkTheme, LightTheme} from '../components/Themes.js' 
 import { motion } from 'framer-motion'
 
 const Icons = styled.div`
