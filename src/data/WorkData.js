@@ -5,17 +5,17 @@ export const Work = [
         description:"",
         tags:["React","heroku","styledComponents"],
         
-        demo:"",
+        demo:"https://awsm-dash.herokuapp.com/",
         github:"https://github.com/andrehatlo/cryptodash"
     },
     {
         id:2,
-        name:"Website",
+        name:"This Website",
         description:".",
         tags:["react","sass"],
         
         demo:"",
-        github:"https://github.com/andrehatlo/"
+        github:"https://github.com/andrehatlo/my-react-portfolio"
         
     },
     {
